@@ -19,10 +19,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Allow requests from frontend localhost:5173
-// app.use(cors({
-//     origin: 'https://storybook-igxm.onrender.com/',
-//     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-// }));
+app.use(cors({
+    origin: 'https://storybook-igxm.onrender.com',
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+}));
 
 // Routes
 app.use('/api/users', userRoute);

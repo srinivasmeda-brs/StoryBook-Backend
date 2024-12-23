@@ -20,8 +20,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // Allow requests from frontend localhost:5173
 app.use(cors({
-    origin: 'https://storybook-igxm.onrender.com/',
+    origin: 'https://storybook-igxm.onrender.com', // Replace with your frontend deployed URL
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    credentials: true // If needed for cookies/sessions
 }));
 
 // Routes

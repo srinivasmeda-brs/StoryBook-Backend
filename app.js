@@ -20,12 +20,13 @@ app.use(express.urlencoded({ extended: true }));
 
 // Allow requests from frontend localhost:5173
 app.use(cors({
-    origin: 'https://storybook-jbeo.onrender.com', // Adjust this to match your frontend origin
+    origin: 'https://storybook-jbeo.onrender.com', // Ensure this is correct
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,  // Allow credentials (cookies, authentication headers)
+    preflightContinue: false,  // Ensure preflight requests are handled
+    optionsSuccessStatus: 200, // Send a 200 response for OPTIONS requests
 }));
-
 
 // Routes
 app.use('/api/users', userRoute);

@@ -8,7 +8,8 @@ import userRoute from './src/routes/userRoute.js';
 import storyRoute from './src/routes/storyRoute.js';
 
 const app = express();
-const port = 3005;
+const port = process.env.PORT || 3005;
+
 
 dotenv.config();
 connectdb();

@@ -28,8 +28,6 @@ const authorStories = async (req, res, next) => {
   }
 };
 
-    
-
 
 const createStory = async (req, res, next) => {
     try {

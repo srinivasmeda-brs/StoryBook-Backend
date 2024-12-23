@@ -18,11 +18,12 @@ connectdb();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Allow requests from frontend localhost:5173
+// Update CORS configuration to allow frontend URL
 app.use(cors({
-    origin: 'https://storybook-igxm.onrender.com',
+    origin: 'https://storybook-jbeo.onrender.com', // Frontend URL
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-}));
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  }));
 
 // Routes
 app.use('/api/users', userRoute);

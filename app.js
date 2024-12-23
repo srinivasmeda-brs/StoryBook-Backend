@@ -26,7 +26,7 @@ app.use('/api/', storyRoute);
 
 // Update CORS configuration to allow frontend URL
 app.use(cors({
-    origin: 'https://storybook-jbeo.onrender.com', // Frontend URL
+    origin: 'https://storybook-backend-gd6a.onrender.com', // Frontend URL
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }));

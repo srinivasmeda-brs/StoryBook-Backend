@@ -1,0 +1,57 @@
+[
+  {
+    "title": "The Secret Society",
+    "content": "A young man discovers a secret society that has been manipulating world events.",
+    "isPublished": false,
+    "likes": 120,
+    "comments": ["Amazing story!", "This is very intriguing.", "I want to know more!"],
+    "createdAt": "2023-12-05T06:00:00Z",
+    "updatedAt": "2023-12-08T06:00:00Z",
+    "publishedAt": "2024-12-17T06:39:56.535+00:00",
+    "userId": "67600418aebc28bc45b73769"
+  },
+  {
+    "title": "The Haunted Forest",
+    "content": "A group of teenagers encounters a mysterious creature in the woods.",
+    "isPublished": true,
+    "likes": 200,
+    "comments": ["Scary but fun!", "Great imagery in this story.", "What happened to the teens?"],
+    "createdAt": "2023-12-10T06:00:00Z",
+    "updatedAt": "2023-12-11T06:00:00Z",
+    "publishedAt": "2024-12-18T06:39:56.535+00:00",
+    "userId": "67600418aebc28bc45b73769"
+  },
+  {
+    "title": "The Haunted Mansion",
+    "content": "A group of friends explores a haunted mansion, only to realize the ghosts are real.",
+    "isPublished": true,
+    "likes": 320,
+    "comments": ["Super spooky!", "I didn't expect the twist!", "Loved the ending!"],
+    "createdAt": "2023-12-15T06:00:00Z",
+    "updatedAt": "2023-12-16T06:00:00Z",
+    "publishedAt": "2024-12-17T06:39:56.535+00:00",
+    "userId": "67600418aebc28bc45b73769"
+  },
+  {
+    "title": "Alien Encounter",
+    "content": "Aliens land on Earth, and humanity must decide whether to trust them.",
+    "isPublished": true,
+    "likes": 450,
+    "comments": ["The idea of first contact is fascinating.", "I hope they made peace!", "I would be scared too."],
+    "createdAt": "2023-12-20T06:00:00Z",
+    "updatedAt": "2023-12-22T06:00:00Z",
+    "publishedAt": "2024-12-19T06:39:56.535+00:00",
+    "userId": "67600418aebc28bc45b73769"
+  },
+  {
+    "title": "Time Travel",
+    "content": "A scientist accidentally discovers time travel, but altering the past has consequences.",
+    "isPublished": true,
+    "likes": 600,
+    "comments": ["Time travel always messes things up.", "This concept is amazing!", "I wonder if it's really possible."],
+    "createdAt": "2023-12-25T06:00:00Z",
+    "updatedAt": "2023-12-26T06:00:00Z",
+    "publishedAt": "2024-12-20T06:39:56.535+00:00",
+    "userId": "67600418aebc28bc45b73769"
+  }
+]

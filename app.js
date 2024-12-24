@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // Update CORS configuration to allow frontend URL
-app.use(cors({origin: 'https://storybook-jbeo.onrender.com/login'}));
+app.use(cors({origin: 'https://storybook-jbeo.onrender.com'}));
 
 
 // Routes

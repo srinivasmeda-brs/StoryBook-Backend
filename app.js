@@ -10,7 +10,6 @@ import storyRoute from './src/routes/storyRoute.js';
 const app = express();
 const port = process.env.PORT || 3005;
 
-
 dotenv.config();
 connectdb();
 
@@ -18,15 +17,17 @@ connectdb();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
-// Update CORS configuration to allow frontend URL
-app.use(cors({origin: 'https://storybook-jbeo.onrender.com'}));
-
+// Update CORS configuration to allow frontend URL and add more specific settings
+app.use(cors({
+  origin: 'https://storybook-jbeo.onrender.com', // Allow your frontend origin
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // Allow these HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow these headers in the request
+  credentials: true, // Allow cookies and other credentials
+}));
 
 // Routes
 app.use('/api/users', userRoute);
 app.use('/api/', storyRoute);
-
 
 app.use(notFound);
 app.use(errorHandler);

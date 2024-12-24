@@ -19,13 +19,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Update CORS configuration to allow frontend URL
-app.use(cors({
-    origin: 'https://storybook-jbeo.onrender.com', // Frontend URL
-    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
-  }));
-  
+// app.use(cors({
+//     origin: 'https://storybook-jbeo.onrender.com', // Frontend URL
+//     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+//     credentials: true,
+//   }));
+
 
 // Routes
 app.use('/api/users', userRoute);
